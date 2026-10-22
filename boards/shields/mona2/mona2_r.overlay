@@ -84,8 +84,8 @@
                             こちらも Studio から ON/OFF 可能
    ────────────────────────────────────────────────────── */
 &scroll_runtime_input_processor {
-    // x-codes = <INPUT_REL_X>;
-    // y-codes = <INPUT_REL_Y>;
+    x-codes = <INPUT_REL_X>;
+    y-codes = <INPUT_REL_Y>;
     xy-to-scroll-enabled;
     active-layers = <0x000000c0>;  /* layer6 + layer7 */
     scale-multiplier = <1>;
