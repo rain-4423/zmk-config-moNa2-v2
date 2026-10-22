@@ -188,7 +188,7 @@
 &kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 10 PRINTSCREEN  &lt 2 LC(SPACE)  &mt LEFT_SHIFT SPACE    &lt 8 ENTER    &kp BACKSPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&rsr_default>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         mac_layer {
