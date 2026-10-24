@@ -113,14 +113,10 @@
     status = "okay";
     device = <&trackball_central>;
     input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
-    change_layer {
-        layers = <0>;
-        input-processors = <&zip_temp_layer 4 10000>;
-    };
+    input-processors = <&zip_temp_layer 4 10000>;
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
     excluded-positions = <
         8 // o
         18 // K
