@@ -113,7 +113,13 @@
     status = "okay";
     device = <&trackball_central>;
     input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
-    input-processors = <&zip_temp_layer 4 10000>;
+    smaller_dpi {
+        layers = <6>;
+    };
+    change_layer {
+        layers = <0>;
+        input-processors = <&zip_temp_layer 4 10000>;
+    };
 };
 
 &zip_temp_layer {
