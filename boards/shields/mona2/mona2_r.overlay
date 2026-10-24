@@ -4,7 +4,6 @@
 #include <input/processors/runtime-input-processor.dtsi>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <6>;
@@ -114,10 +113,6 @@
     status = "okay";
     device = <&trackball_central>;
     input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
-    scroller {
-        layers = <6>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
-    };
     change_layer {
         layers = <0>;
         input-processors = <&zip_temp_layer 4 10000>;
