@@ -117,6 +117,7 @@
 };
 
 &zip_temp_layer {
+    require-prior-idle-ms = <200>;
     excluded-positions = <
         8 // o
         18 // K
